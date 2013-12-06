@@ -50,10 +50,10 @@ $body-font-style: normal;
 // $default-float: left;
 
 // We use these as default colors throughout
- $primary-color: #008CBA;
-// $secondary-color: #e7e7e7;
-// $alert-color: #f04124;
-// $success-color: #43AC6A;
+$primary-color: #008CBA;
+$secondary-color: #e7e7e7;
+$alert-color: #f04124;
+$success-color: #43AC6A;
 
 // We use these to make sure border radius matches unless we want it different.
 // $global-radius: 3px;
@@ -478,11 +478,11 @@ $body-font-style: normal;
 
 // Off-canvas
 
-  $tabbar-bg: #212D48;
- // $tabbar-height: rem-calc(45);
- // $tabbar-line-height: $tabbar-height;
- // $tabbar-color: #FFF;
- // $tabbar-middle-padding: 0 rem-calc(10);
+$tabbar-bg: #212D48;
+// $tabbar-height: rem-calc(45);
+// $tabbar-line-height: $tabbar-height;
+// $tabbar-color: #FFF;
+// $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
 // $tabbar-right-section-border: solid 1px lighten($tabbar-bg, 10%);
@@ -490,7 +490,7 @@ $body-font-style: normal;
 
 // Off Canvas Tab Bar Headers
 // $tabbar-header-color: #FFF;
-// $tabbar-header-weight: bold;
+ $tabbar-header-weight: normal;
 // $tabbar-header-line-height: $tabbar-height;
 // $tabbar-header-margin: 0;
 

@@ -1,6 +1,9 @@
 Baseline::Application.routes.draw do
+  get "pages/about"
+  get "pages/privacy"
+  get "pages/terms"
+  get "pages/contactus"
   resources :users
-
   resources :programs
 
   get "welcome/index"

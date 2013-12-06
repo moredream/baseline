@@ -14,13 +14,16 @@
   <body>
   <div class="off-canvas-wrap">
     <div class="inner-wrap">
-      <nav class="tab-bar">
-      <section class="left-small">
-        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
-      </section>
-      <section class="middle tab-bar-section">
-        <h1 class="title">2nd Life</h1>
-      </section>
+      <nav class="tab-bar show-for-small">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
+        <section class="middle tab-bar-section">
+          <h1 class="title">2nd Life</h1>
+        </section>
+        <section class="right-small">
+          <a class="right-off-canvas-toggle menu-icon" ><span></span></a>
+        </section>
       </nav>
       <nav class="top-bar hide-for-small" data-topbar>
           <ul class="title-area">
@@ -37,12 +40,12 @@
                 <li><%= link_to 'Program', programs_path %></li>
 
                 <li class=“divider”></li>
-                <li class="has-dropdown"><%= link_to 'About Us', programs_path %>
+                <li class="has-dropdown"><%= link_to 'About Us', pages_about_path %>
                   <ul class="dropdown">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><%= link_to 'About Us', pages_about_path %> </li>
+                    <li><%= link_to 'Privacy Policy', pages_privacy_path %> </li>
+                    <li><%= link_to 'Terms of Use', pages_terms_path %> </li>
+                    <li><%= link_to 'Contact Us', pages_contactus_path %> </li>
                   </ul>
                 </li>
               </ul>
@@ -60,27 +63,45 @@
                 <li><%= link_to 'Program', programs_path %></li>
 
                 <li class=“divider”></li>
-                <li class="has-dropdown"><%= link_to 'About Us', programs_path %>
+                <li class="has-dropdown"><%= link_to 'About Us', pages_about_path %>
                   <ul class="dropdown">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Use</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><%= link_to 'About Us', pages_about_path %> </li>
+                    <li><%= link_to 'Privacy Policy', pages_privacy_path %> </li>
+                    <li><%= link_to 'Terms of Use', pages_terms_path %> </li>
+                    <li><%= link_to 'Contact Us', pages_contactus_path %> </li>
                   </ul>
                 </li>
         </ul>
       </aside>
+      <aside class="right-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>2nd Life</label></li>
+                <li class=“divider”></li>
+                <li><%= link_to 'People', users_path %></li>
+                <li class=“divider”></li>
+                <li><%= link_to 'Program', programs_path %></li>
 
+                <li class=“divider”></li>
+                <li class="has-dropdown"><%= link_to 'About Us', pages_about_path %>
+                  <ul class="dropdown">
+                    <li><%= link_to 'About Us', pages_about_path %> </li>
+                    <li><%= link_to 'Privacy Policy', pages_privacy_path %> </li>
+                    <li><%= link_to 'Terms of Use', pages_terms_path %> </li>
+                    <li><%= link_to 'Contact Us', pages_contactus_path %> </li>
+                  </ul>
+                </li>
+        </ul>
+      </aside>
       <section class="main-section"> <!-- content goes here -->
             <div class="row">
               <div class="small-6 large-6 columns"><%= yield %></div>
               <div class="small-6 large-6 columns">The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
 
-The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+                The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
 
-The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+                The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
 
-The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+                The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
 
 
 
