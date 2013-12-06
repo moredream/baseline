@@ -1,3 +1,4 @@
+
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -44,4 +45,14 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem "puma", group: [:test, :development]
+
 gem "rspec-rails", group: [:test, :development]
+
+gem 'foundation-rails'
+
+group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end

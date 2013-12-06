@@ -1,14 +1,99 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Baseline</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<%= yield %>
+    <title><%= content_for?(:title) ? yield(:title) : "foundation-rails" %></title>
 
-</body>
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+  <div class="off-canvas-wrap">
+    <div class="inner-wrap">
+      <nav class="tab-bar">
+      <section class="left-small">
+        <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
+      </section>
+      <section class="middle tab-bar-section">
+        <h1 class="title">2nd Life</h1>
+      </section>
+      </nav>
+      <nav class="top-bar hide-for-small" data-topbar>
+          <ul class="title-area">
+            <li class="name">
+              <h1><%= link_to '2nd Life', root_path %></h1>
+            </li>
+          </ul>
+            <section class="top-bar-section">
+              <!-- Right Nav Section -->
+              <ul class="right">
+                <li class=“divider”></li>
+                <li><%= link_to 'People', users_path %></li>
+                <li class=“divider”></li>
+                <li><%= link_to 'Program', programs_path %></li>
+
+                <li class=“divider”></li>
+                <li class="has-dropdown"><%= link_to 'About Us', programs_path %>
+                  <ul class="dropdown">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <!-- Left Nav Section -->
+            </section>
+      </nav>
+
+      <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>2nd Life</label></li>
+                <li class=“divider”></li>
+                <li><%= link_to 'People', users_path %></li>
+                <li class=“divider”></li>
+                <li><%= link_to 'Program', programs_path %></li>
+
+                <li class=“divider”></li>
+                <li class="has-dropdown"><%= link_to 'About Us', programs_path %>
+                  <ul class="dropdown">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                  </ul>
+                </li>
+        </ul>
+      </aside>
+
+      <section class="main-section"> <!-- content goes here -->
+            <div class="row">
+              <div class="small-6 large-6 columns"><%= yield %></div>
+              <div class="small-6 large-6 columns">The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+
+The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+
+The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+
+The values of the hash here being the arguments or options passed to the specific git command. As per the final example shown here, multiple git commands can be specified at a time, but the order of their running is not guaranteed to be the same as the order that they were specified in.
+
+
+
+              </div>
+            </div>
+      </section>
+      <a class="exit-off-canvas"></a>
+    </div>
+  </div>
+
+
+
+    <%= javascript_include_tag "application" %>
+  </body>
 </html>
+
